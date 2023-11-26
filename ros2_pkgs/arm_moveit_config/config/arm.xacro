@@ -1,0 +1,417 @@
+<?xml version="1.0" ?>
+<robot name="arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find arm)/urdf/materials.xacro" />
+<xacro:include filename="$(find arm)/urdf/File.trans" />
+<xacro:include filename="$(find arm)/urdf/File.gazebo" />
+
+<link name="world"/>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.11417462384593588 -0.0007614692727517941 0.0746791172776188" rpy="0 0 0"/>
+    <mass value="0.22561347641755108"/>
+    <inertia ixx="0.000497" iyy="0.000497" izz="0.000426" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component9_1">
+  <inertial>
+    <origin xyz="-0.017999623845936383 -4.710170785028264e-07 0.0758225663382312" rpy="0 0 0"/>
+    <mass value="0.2736375911709036"/>
+    <inertia ixx="0.000903" iyy="0.000962" izz="0.000215" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.096175 0.000761 -0.344679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.096175 0.000761 -0.344679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component9_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_1">
+  <inertial>
+    <origin xyz="-0.017999623845935897 -4.692727519382345e-07 0.09000011727761856" rpy="0 0 0"/>
+    <mass value="0.21786892463680377"/>
+    <inertia ixx="0.001126" iyy="0.001078" izz="0.000127" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.096175 0.000761 -0.164679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.096175 0.000761 -0.164679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component16_1">
+  <inertial>
+    <origin xyz="-0.021687843963558426 -0.04280227972984435 1.1990372644765657e-07" rpy="0 0 0"/>
+    <mass value="0.0713519524900392"/>
+    <inertia ixx="0.000113" iyy="2.4e-05" izz="0.000107" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.096175 0.000761 -0.494679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component16_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.096175 0.000761 -0.494679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component16_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component15_1">
+  <inertial>
+    <origin xyz="3.7615406359159387e-07 -0.02109685787535856 1.241155563325158e-07" rpy="0 0 0"/>
+    <mass value="0.07031908465300662"/>
+    <inertia ixx="4.4e-05" iyy="3.3e-05" izz="2.5e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.114175 0.100761 -0.494679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component15_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.114175 0.100761 -0.494679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component15_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component14_1">
+  <inertial>
+    <origin xyz="3.761540640356831e-07 -0.013788131846924706 -0.01799987393555952" rpy="0 0 0"/>
+    <mass value="0.07711899445707972"/>
+    <inertia ixx="2.9e-05" iyy="1.6e-05" izz="2.9e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.114175 0.142761 -0.512679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component14_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.114175 0.142761 -0.512679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component14_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component12_1">
+  <inertial>
+    <origin xyz="3.7615406418833874e-07 -4.692727518844581e-07 0.02498772494041686" rpy="0 0 0"/>
+    <mass value="0.21951379315062275"/>
+    <inertia ixx="0.000178" iyy="0.000253" izz="0.000252" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.114175 0.000761 -0.124679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.114175 0.000761 -0.124679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component18_1">
+  <inertial>
+    <origin xyz="0.012500376154062201 -4.692727520894807e-07 1.1727761828339567e-07" rpy="0 0 0"/>
+    <mass value="0.062499999999999896"/>
+    <inertia ixx="7e-06" iyy="7e-06" izz="7e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.086175 0.000761 -0.344679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component18_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.086175 0.000761 -0.344679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component18_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component20_1">
+  <inertial>
+    <origin xyz="3.7615404883950543e-07 0.01249952727643705 1.1990372655867887e-07" rpy="0 0 0"/>
+    <mass value="0.3125000000000012"/>
+    <inertia ixx="3.3e-05" iyy="3.3e-05" izz="3.3e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.111675 0.095761 -0.494679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component20_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.111675 0.095761 -0.494679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component20_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component21_1">
+  <inertial>
+    <origin xyz="3.76154082354363e-07 -4.75412229306027e-07 0.012500124537928481" rpy="0 0 0"/>
+    <mass value="0.3125000000000012"/>
+    <inertia ixx="3.3e-05" iyy="3.3e-05" izz="3.3e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.114175 0.142761 -0.522679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component21_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.114175 0.142761 -0.522679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component21_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component19_1">
+  <inertial>
+    <origin xyz="0.012500376154091275 -4.7272356327738695e-07 1.1990372672521232e-07" rpy="0 0 0"/>
+    <mass value="0.06250000000000025"/>
+    <inertia ixx="7e-06" iyy="7e-06" izz="7e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.086175 0.000761 -0.494679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component19_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.086175 0.000761 -0.494679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component19_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component17_1">
+  <inertial>
+    <origin xyz="0.012500376154064047 -4.6927275184575207e-07 1.1727761872748488e-07" rpy="0 0 0"/>
+    <mass value="0.31249999999999956"/>
+    <inertia ixx="3.3e-05" iyy="3.3e-05" izz="3.3e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.076175 0.000761 -0.164679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component17_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+     
+  </visual>
+  <collision>
+    <origin xyz="0.076175 0.000761 -0.164679" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://arm/meshes/Component17_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute_7" type="continuous">
+  <origin xyz="0.0 0.0 0.18" rpy="0 0 0"/>
+  <parent link="Component8_1"/>
+  <child link="Component9_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Revolute_11" type="continuous">
+  <origin xyz="0.018 0.0 0.04" rpy="0 0 0"/>
+  <parent link="Component12_1"/>
+  <child link="Component8_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Revolute_12" type="continuous">
+  <origin xyz="0.0 0.0 0.15" rpy="0 0 0"/>
+  <parent link="Component9_1"/>
+  <child link="Component16_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Revolute_13" type="continuous">
+  <origin xyz="-0.018 -0.1 0.0" rpy="0 0 0"/>
+  <parent link="Component16_1"/>
+  <child link="Component15_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute_14" type="continuous">
+  <origin xyz="0.0 -0.042 0.018" rpy="0 0 0"/>
+  <parent link="Component15_1"/>
+  <child link="Component14_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="Revolute_20" type="continuous">
+  <origin xyz="-0.114175 -0.000761 0.124679" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component12_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Rigid_22" type="fixed">
+  <origin xyz="0.01 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Component9_1"/>
+  <child link="Component18_1"/>
+</joint>
+
+<joint name="Rigid_23" type="fixed">
+  <origin xyz="-0.0155 -0.095 0.0" rpy="0 0 0"/>
+  <parent link="Component16_1"/>
+  <child link="Component20_1"/>
+</joint>
+
+<joint name="Rigid_24" type="fixed">
+  <origin xyz="0.0 -0.042 0.028" rpy="0 0 0"/>
+  <parent link="Component15_1"/>
+  <child link="Component21_1"/>
+</joint>
+
+<joint name="Rigid_25" type="fixed">
+  <origin xyz="0.01 0.0 0.15" rpy="0 0 0"/>
+  <parent link="Component9_1"/>
+  <child link="Component19_1"/>
+</joint>
+
+<joint name="Rigid_26" type="fixed">
+  <origin xyz="0.038 0.0 0.04" rpy="0 0 0"/>
+  <parent link="Component12_1"/>
+  <child link="Component17_1"/>
+</joint>
+
+<joint name="world_link" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="world"/>
+  <child link="base_link"/>
+</joint>
+
+<ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+
+    <joint name="Revolute_7">
+      <command_interface name="position">
+        <param name="min">-6.2832</param>
+        <param name="max">6.2832</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="Revolute_11">
+      <command_interface name="position">
+        <param name="min">-6.2832</param>
+        <param name="max">6.2832</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="Revolute_12">
+      <command_interface name="position">
+        <param name="min">-6.2832</param>
+        <param name="max">6.2832</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="Revolute_13">
+      <command_interface name="position">
+        <param name="min">-6.2832</param>
+        <param name="max">6.2832</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+
+    <joint name="Revolute_14">
+      <command_interface name="position">
+        <param name="min">-6.2832</param>
+        <param name="max">6.2832</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+
+    <joint name="Revolute_20">
+      <command_interface name="position">
+        <param name="min">-6.2832</param>
+        <param name="max">6.2832</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+</ros2_control>
+
+<gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+          <!--<robot_sim_type>gazebo_ros2_control/DefaultRobotHWSim</robot_sim_type> -->
+      <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+      <parameters>$(find arm)/config/controller.yaml</parameters>
+    </plugin>
+</gazebo>
+
+</robot>
